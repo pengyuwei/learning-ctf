@@ -25,7 +25,7 @@ def main():
         for b in string.printable:
             for c in string.printable:
                 for d in string.printable:
-                    crc = a+b+c+d
+                    crc = a + b + c + d
                     crcstr = binascii.crc32(str.encode(crc))
                     if check(crcstr):
                         success += 1
